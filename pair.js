@@ -38,25 +38,25 @@ const config = {
     AUTO_LIKE_EMOJI: ['🧩', '🍉', '💜', '🌸', '🪴', '💊', '💫', '🍂', '🌟', '🎋', '😶‍🌫️', '🫀', '🧿', '👀', '🤖', '🚩', '🥰', '🗿', '💜', '💙', '🌝', '🖤', '💚'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/DiefTmkDKSXCrHgXxAKHAd?mode=ac_t',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/HssGT0vrGU67uzBVFQp9by?mode=ems_copy_c',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://files.catbox.moe/tf0ms3.jpg',
+    IMAGE_PATH: 'https://ibb.co/NgPMGW6y.jpg',
     NEWSLETTER_JID: '120363420985544024@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: 'ZEUS-MINI',
-    OWNER_NAME: '@kelumXz',
+    BOT_NAME: 'ZORO MINI BOT ',
+    OWNER_NAME: '@SADEE X ZORO ',
     OWNER_NUMBER: '94766911711',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> © Zeus',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb1WkmNJP2121yQf143q',
+    BOT_FOOTER: '> © SADEE',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6PAtxEVccRrRGVEY3j',
     BUTTON_IMAGES: {
-        ALIVE: 'https://files.catbox.moe/9uuvfz.jpg',
-        MENU: 'https://files.catbox.moe/kus7ix.jpg',
-        OWNER: 'https://files.catbox.moe/fkw8ac.jpg',
-        SONG: 'https://files.catbox.moe/fkw8ac.jpg',
-        VIDEO: 'https://files.catbox.moe/fkw8ac.jpg'
+        ALIVE: 'https://ibb.co/NgPMGW6y.jpg',
+        MENU: 'https://ibb.co/NgPMGW6y.jpg',
+        OWNER: 'https://ibb.co/NgPMGW6y.jpg',
+        SONG: 'https://ibb.co/NgPMGW6y.jpg',
+        VIDEO: 'https://ibb.co/NgPMGW6y.jpg'
     }
 };
 
@@ -487,11 +487,11 @@ function setupCommandHandlers(socket, number) {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '🪨 Hellow, *"Itz: ZEUS-MINI"*';
-                    const content = `*© bY|* kelumXz & Danuz\n` +                                   `*◯ A B O U T*\n` +
+                    const title = '🪨 Hellow, *"Itz: ZORO MINI"*';
+                    const content = `*© bY|* SADEE / ZORO` +                                   `*◯ A B O U T*\n` +
                                    `> This is a lightweight, stable WhatsApp bot designed to run 24/7. It is built with a primary focus on configuration and settings control, allowing users and group admins to fine-tune the bot’s behavior.\n` +
                                    `*◯ D E P L O Y*\n` +
-                                   `> *Webiste* https://kelumxz-md.vercel.app`;
+                                   `> *Webiste* `;
                     const footer = config.BOT_FOOTER;
 
                     await socket.sendMessage(sender, {
@@ -523,7 +523,7 @@ case 'menu': {
     const title = '🪨 Hellow, *"Itz: ZEUS-MINI"*';
     const text = `╭──◯\n` +
         `│ \`S T A T U S\`\n` +
-        `│ *⦁ Name:* @ZEUS-MINI\n` +
+        `│ *⦁ Name:* @ZORO MINI\n` +
         `│ *⦁ Version:* 0.0001+\n` +
         `│ *⦁ Platform:* Heroku\n` +
         `│ *⦁ Uptime:* ${hours}h ${minutes}m ${seconds}s\n` +
@@ -597,7 +597,7 @@ case 'menu': {
                             contacts: [{ vcard }]
                         },
                         image: { url: config.BUTTON_IMAGES.OWNER },
-                        caption: '*👑 SHALA MD OWNER DETAILS*',
+                        caption: '*👑 ZORO MD OWNER DETAILS*',
                         buttons: [
                             { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: '📋 MENU' }, type: 1 },
                             { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: '🤖 BOT INFO' }, type: 1 }
@@ -614,7 +614,7 @@ case 'menu': {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
                         
-                    const title = '*🔰 Queen Shala MD System 💥*';
+                    const title = '*🔰 ZORO MD System 💥*';
                     const content = `┏━━━━━━━━━━━━━━━━\n` +
                         `┃🤖 \`ʙᴏᴛ ɴᴀᴍᴇ\` : ${config.BOT_NAME}\n` +
                         `┃🔖 \`ᴠᴇʀsɪᴏɴ\` : ${config.BOT_VERSION}\n` +
@@ -797,7 +797,7 @@ case 'menu': {
 
                         const { title, uploader, duration, quality, format, thumbnail, download } = data.data.result;
 
-                        const titleText = '*༊ SHALA SONG DOWNLOAD*';
+                        const titleText = '*༊ ZORO SONG DOWNLOAD*';
                         const content = `┏━━━━━━━━━━━━━━━━\n` +
                             `┃📝 \`Title\` : ${video.title}\n` +
                             `┃📈 \`Views\` : ${video.views}\n` +
