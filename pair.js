@@ -40,23 +40,23 @@ const config = {
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/HssGT0vrGU67uzBVFQp9by?mode=ems_copy_c',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://ibb.co/NgPMGW6y.jpg',
-    NEWSLETTER_JID: '120363420985544024@newsletter',
+    IMAGE_PATH: 'https://files.catbox.moe/sfwqs5.jpg',
+    NEWSLETTER_JID: '120363403416056268@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: 'ZORO MINI BOT ',
+    BOT_NAME: 'SADEE MINI BOT ',
     OWNER_NAME: '@SADEE X ZORO ',
     OWNER_NUMBER: '94766911711',
     BOT_VERSION: '1.0.0',
     BOT_FOOTER: '> © SADEE',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6PAtxEVccRrRGVEY3j',
     BUTTON_IMAGES: {
-        ALIVE: 'https://ibb.co/NgPMGW6y.jpg',
-        MENU: 'https://ibb.co/NgPMGW6y.jpg',
-        OWNER: 'https://ibb.co/NgPMGW6y.jpg',
-        SONG: 'https://ibb.co/NgPMGW6y.jpg',
-        VIDEO: 'https://ibb.co/NgPMGW6y.jpg'
+        ALIVE: 'https://files.catbox.moe/sfwqs5.jpg',
+        MENU: 'https://files.catbox.moe/sfwqs5.jpg',
+        OWNER: 'https://files.catbox.moe/sfwqs5.jpg',
+        SONG: 'https://files.catbox.moe/sfwqs5.jpg',
+        VIDEO: 'https://files.catbox.moe/sfwqs5.jpg'
     }
 };
 
@@ -487,28 +487,7 @@ function setupCommandHandlers(socket, number) {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '🪨 Hellow, *"Itz: ZORO MINI"*';
-                    const content = `*© bY|* SADEE / ZORO` +                                   `*◯ A B O U T*\n` +
-                                   `> This is a lightweight, stable WhatsApp bot designed to run 24/7. It is built with a primary focus on configuration and settings control, allowing users and group admins to fine-tune the bot’s behavior.\n` +
-                                   `*◯ D E P L O Y*\n` +
-                                   `> *Webiste* `;
-                    const footer = config.BOT_FOOTER;
-
-                    await socket.sendMessage(sender, {
-                        image: { url: config.BUTTON_IMAGES.ALIVE },
-                        caption: formatMessage(title, content, footer),
-                        buttons: [
-                            { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: 'MENU' }, type: 1 },
-                            { buttonId: `${config.PREFIX}ping`, buttonText: { displayText: 'PING' }, type: 1 }
-                        ],
-                        quoted: msg
-                    });
-                    break;
-                }
-//=======================================
-case 'menu': {
-    const startTime = socketCreationTime.get(number) || Date.now();
-    const uptime = Math.floor((Date.now() - startTime) / 1000);
+                    const title = '🪨 Hellow, *"Itz: SADEE MINI
     const hours = Math.floor(uptime / 3600);
     const minutes = Math.floor((uptime % 3600) / 60);
     const seconds = Math.floor(uptime % 60);
@@ -520,37 +499,7 @@ case 'menu': {
         } 
     });
 
-    const title = '🪨 Hellow, *"Itz: ZEUS-MINI"*';
-    const text = `╭──◯\n` +
-        `│ \`S T A T U S\`\n` +
-        `│ *⦁ Name:* @ZORO MINI\n` +
-        `│ *⦁ Version:* 0.0001+\n` +
-        `│ *⦁ Platform:* Heroku\n` +
-        `│ *⦁ Uptime:* ${hours}h ${minutes}m ${seconds}s\n` +
-        `╰──◯`;
-
-    const sections = [
-        {
-            title: "MAIN COMMANDS",
-            rows: [
-                { title: "BOT STATUS", description: "Show bot information", rowId: `${config.PREFIX}alive` },
-                { title: "SYSTEM INFO", description: "Show system details", rowId: `${config.PREFIX}system` },
-                { title: "PING TEST", description: "Check bot latency", rowId: `${config.PREFIX}ping` }
-            ]
-        },
-        {
-            title: "MEDIA DOWNLOAD",
-            rows: [
-                { title: "DOWNLOAD SONG", description: "Download audio from YouTube", rowId: `${config.PREFIX}song` },
-                { title: "DOWNLOAD VIDEO", description: "Download video from YouTube", rowId: `${config.PREFIX}video` }
-            ]
-        },
-        {
-            title: "OTHER OPTIONS",
-            rows: [
-                { title: "OWNER INFO", description: "Contact bot owner", rowId: `${config.PREFIX}owner` },
-                { title: "PREFERENCES", description: "Change bot settings", rowId: `${config.PREFIX}preferences` },
-                { title: "JOIN CHANNEL", description: "Get our channel link", rowId: `${config.PREFIX}channel` }
+    const title = '🪨 Hellow, *"Itz: SADEE MINI       { title: "JOIN CHANNEL", description: "Get our channel link", rowId: `${config.PREFIX}channel` }
             ]
         }
     ];
@@ -587,7 +536,7 @@ case 'menu': {
                         + 'VERSION:3.0\n' 
                         + 'FN:SHALA OWNER\n'
                         + 'ORG:SHALA OWNER\n'
-                        + 'TEL;type=CELL;type=VOICE;waid=94741245331:+94 74 124 5331\n'
+                        + 'TEL;type=CELL;type=VOICE;waid=94766748682:+94766748682\n'
                         + 'EMAIL:shalamd@gmail.com\n'
                         + 'END:VCARD';
 
@@ -597,7 +546,7 @@ case 'menu': {
                             contacts: [{ vcard }]
                         },
                         image: { url: config.BUTTON_IMAGES.OWNER },
-                        caption: '*👑 ZORO MD OWNER DETAILS*',
+                        caption: '*👑 SADEE MD OWNER DETAILS*',
                         buttons: [
                             { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: '📋 MENU' }, type: 1 },
                             { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: '🤖 BOT INFO' }, type: 1 }
@@ -614,7 +563,7 @@ case 'menu': {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
                         
-                    const title = '*🔰 ZORO MD System 💥*';
+                    const title = '*🔰  SADEE MD System 💥*';
                     const content = `┏━━━━━━━━━━━━━━━━\n` +
                         `┃🤖 \`ʙᴏᴛ ɴᴀᴍᴇ\` : ${config.BOT_NAME}\n` +
                         `┃🔖 \`ᴠᴇʀsɪᴏɴ\` : ${config.BOT_VERSION}\n` +
@@ -634,7 +583,7 @@ case 'menu': {
                 // JID COMMAND
                 case 'jid': {
                     await socket.sendMessage(sender, {
-                        text: `*🆔 Chat JID:* ${sender}`
+                        text: `*🆔 Chat JID SADEE MD:* ${sender}`
                     });
                     break;
                 }
@@ -718,7 +667,7 @@ case 'menu': {
 
         const { title, uploader, duration, quality, format, thumbnail, download } = data.data.result;
 
-        const titleText = '*༊ SHALA CHANNEL SONG*';
+        const titleText = '*༊ SADEE CHANAL SONG*';
         const content = `┏━━━━━━━━━━━━━━━━\n` +
             `┃📝 \`Title\` : ${video.title}\n` +
             `┃📈 \`Views\` : ${video.views}\n` +
@@ -797,7 +746,7 @@ case 'menu': {
 
                         const { title, uploader, duration, quality, format, thumbnail, download } = data.data.result;
 
-                        const titleText = '*༊ ZORO SONG DOWNLOAD*';
+                        const titleText = '*༊ SADEE SONG DOWNLOAD*';
                         const content = `┏━━━━━━━━━━━━━━━━\n` +
                             `┃📝 \`Title\` : ${video.title}\n` +
                             `┃📈 \`Views\` : ${video.views}\n` +
