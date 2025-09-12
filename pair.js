@@ -45,9 +45,9 @@ const config = {
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: 'SADEE MINI BOT ',
+    BOT_NAME: 'ZORO BOT ',
     OWNER_NAME: '@SADEE X ZORO ',
-    OWNER_NUMBER: '94766911711',
+    OWNER_NUMBER: '94766748682',
     BOT_VERSION: '1.0.0',
     BOT_FOOTER: '> © SADEE',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6PAtxEVccRrRGVEY3j',
@@ -494,7 +494,7 @@ function setupCommandHandlers(socket, number) {
 
     await socket.sendMessage(sender, { 
         react: { 
-            text: "👍",
+            text: "❗",
             key: msg.key 
         } 
     });
